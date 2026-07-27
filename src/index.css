@@ -1,0 +1,363 @@
+/* =========================
+   GOOGLE FONT
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* =========================
+   GLOBAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0d1117;
+    color:#ffffff;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#161b22;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#00bfff;
+    border-radius:20px;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    background:#161b22;
+    border-bottom:2px solid #00bfff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 40px;
+    box-shadow:0 0 15px rgba(0,191,255,.2);
+}
+
+.logo{
+    font-size:26px;
+    font-weight:bold;
+    color:#00bfff;
+}
+
+.logo::before{
+    content:"⚛ ";
+}
+
+.nav-links{
+    display:flex;
+    gap:20px;
+}
+
+.nav-links a{
+    color:#ffffff;
+    text-decoration:none;
+    padding:10px 16px;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.nav-links a::before{
+    content:"➜ ";
+    color:#00bfff;
+}
+
+.nav-links a:hover{
+    background:#00bfff;
+    color:#000;
+}
+
+/* =========================
+   HOME
+========================= */
+
+.home-container{
+    width:95%;
+    margin:auto;
+    padding:30px;
+}
+
+.home-title{
+    text-align:center;
+    color:#00bfff;
+    margin-bottom:25px;
+    font-size:34px;
+}
+
+.home-title::before{
+    content:"📊 ";
+}
+
+.home-title::after{
+    content:" 📈";
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.table-container{
+    overflow-x:auto;
+    background:#161b22;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 0 20px rgba(0,191,255,.15);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:#00bfff;
+    color:#000;
+    padding:16px;
+    font-size:17px;
+}
+
+td{
+    padding:14px;
+    text-align:center;
+    border-bottom:1px solid #30363d;
+}
+
+tr:nth-child(even){
+    background:#1c2128;
+}
+
+tr:hover{
+    background:#26313d;
+    transition:.3s;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+button{
+    padding:10px 16px;
+    border:none;
+    border-radius:8px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+    margin:3px;
+}
+
+.view-btn{
+    background:#00bfff;
+    color:#000;
+}
+
+.view-btn::before{
+    content:"👁 ";
+}
+
+.update-btn{
+    background:#ffc107;
+    color:#000;
+}
+
+.update-btn::before{
+    content:"✏ ";
+}
+
+.delete-btn{
+    background:#ff3b3b;
+    color:#fff;
+}
+
+.delete-btn::before{
+    content:"🗑 ";
+}
+
+.save-btn{
+    background:#00c853;
+    color:#fff;
+}
+
+.save-btn::before{
+    content:"💾 ";
+}
+
+.cancel-btn{
+    background:#757575;
+    color:#fff;
+}
+
+.cancel-btn::before{
+    content:"❌ ";
+}
+
+button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 12px rgba(0,191,255,.5);
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card{
+    max-width:500px;
+    margin:40px auto;
+    background:#161b22;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(0,191,255,.2);
+}
+
+.card h2{
+    text-align:center;
+    color:#00bfff;
+    margin-bottom:20px;
+}
+
+.card h2::before{
+    content:"📄 ";
+}
+
+.card p{
+    margin:12px 0;
+    color:#ddd;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.form-group{
+    margin-bottom:18px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:8px;
+    color:#00bfff;
+    font-weight:500;
+}
+
+.form-group input{
+    width:100%;
+    padding:12px;
+    background:#0d1117;
+    color:#fff;
+    border:1px solid #30363d;
+    border-radius:8px;
+}
+
+.form-group input:focus{
+    outline:none;
+    border:1px solid #00bfff;
+    box-shadow:0 0 10px rgba(0,191,255,.4);
+}
+
+/* =========================
+   DELETE PAGE
+========================= */
+
+.delete-box{
+    text-align:center;
+}
+
+.delete-box p{
+    font-size:20px;
+    margin:20px 0;
+}
+
+.delete-box p::before{
+    content:"⚠ ";
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+    margin-top:50px;
+    background:#161b22;
+    border-top:2px solid #00bfff;
+    color:#ccc;
+    text-align:center;
+    padding:18px;
+}
+
+.footer::before{
+    content:"💻 ";
+}
+
+.footer::after{
+    content:" 🚀";
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+.navbar{
+    flex-direction:column;
+    gap:15px;
+}
+
+.nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.home-title{
+    font-size:26px;
+}
+
+table{
+    font-size:14px;
+}
+
+button{
+    padding:8px 12px;
+}
+
+.card{
+    width:95%;
+}
+
+}
+
+@media(max-width:480px){
+
+.logo{
+    font-size:22px;
+}
+
+.home-title{
+    font-size:22px;
+}
+
+th,
+td{
+    padding:10px;
+    font-size:12px;
+}
+
+button{
+    width:100%;
+}
+
+}
