@@ -1,108 +1,16 @@
-# DataTable-React-Project
+# React + Vite
 
-# React CRUD Data Table
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
-## 📌 Project Overview
+Currently, two official plugins are available:
 
-The **React CRUD Data Table** is a web application developed using **React.js** and **Vite**. It demonstrates the implementation of basic **CRUD (Create, Read, Update, Delete)** operations in a user-friendly interface. The application displays user information in a responsive table and allows users to view detailed information, update existing records, and delete records with ease.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-The project follows a component-based architecture, making the code clean, reusable, and easy to maintain. It is designed as a beginner-friendly React project to understand React fundamentals, routing, state management, and component communication.
----
-## ✨ Features
+## React Compiler
 
-- Display user records in a responsive table
-- View complete details of a selected user
-- Update user information
-- Delete user records
-- Responsive and modern dark-themed UI
-- Navigation using React Router
-- Reusable React components
-- Simple and clean folder structure
----
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## 🛠️ Technologies Used
+## Expanding the Oxlint configuration
 
-- React.js
-- Vite
-- React Router DOM
-- JavaScript (ES6)
-- HTML5
-- CSS3
----
-
-## 📂 Project Structure
-```
-src/
-├── components/
-│   ├── Navbar.jsx
-│   ├── Footer.jsx
-│   ├── DataTable.jsx
-│   ├── Details.jsx
-│   ├── Update.jsx
-│   └── Delete.jsx
-│
-├── pages/
-│   └── Home.jsx
-│
-├── App.jsx
-├── main.jsx
-└── index.css
-```
----
-
-## 🚀 Installation & Setup
-
-1. Clone the repository.
-
-```bash
-git clone <repository-url>
-```
-2. Install the required dependencies.
-
-```bash
-npm install
-```
-3. Start the development server.
-
-```bash
-npm run dev
-```
-4. Open your browser and visit:
-
-```
-http://localhost:5173
-```
----
-
-## 📚 React Concepts Used
-
-- Functional Components
-- JSX
-- Props
-- State Management (`useState`)
-- Side Effects (`useEffect`)
-- React Router
-- Event Handling
-- Conditional Rendering
-- Component Reusability
-
----
-
-## 🎯 Project Objectives
-
-- Understand React component structure
-- Implement CRUD operations
-- Practice React Hooks
-- Learn client-side routing
-- Build a responsive and reusable user interface
----
-
-## 👨‍💻 Author
-
-**Reeva Solani**
-
----
-
-## 📄 License
-
-This project is developed for educational and learning purposes.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
